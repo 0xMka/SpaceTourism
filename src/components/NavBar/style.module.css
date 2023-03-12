@@ -1,0 +1,128 @@
+.burger {
+  margin-top: 33px;
+  margin-right: 24px;
+  width: 24px;
+  cursor: pointer;
+  animation: slideRight 1s ease 0s 1 normal forwards;
+}
+
+.menu {
+  width: 254px;
+  height: 100vh;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 2.7px;
+  font-weight: 400;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  animation: slideRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  margin-left: 208.45px;
+  margin-top: 33px;
+  margin-right: 24px;
+  margin-bottom: 64.95px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 17.5px 35px 17.5px 35px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .number_main {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58.59vw;
+    height: 9.37vh;
+    font-size: 1.36vh;
+    line-height: 1.66vh;
+    letter-spacing: 0.3vw;
+  }
+
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2.4vw;
+    margin-left: 2.4vw;
+  }
+
+  .main:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .liste_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .number_main {
+    display: inherit;
+    margin-right: 0.76vw;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    margin-top: 4.44vh;
+    width: 57.63vw;
+    font-size: 1.77vh;
+    line-height: 2.13vh;
+    letter-spacing: 0.18vw;
+  }
+
+  .main {
+    display: flex;
+    margin-top: 2.66vh;
+    margin-bottom: 2.66vh;
+    margin-right: 1.66vw;
+    margin-left: 1.66vw;
+  }
+
+  .liste_title {
+    margin-left: 6.87vw;
+  }
+}

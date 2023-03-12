@@ -1,0 +1,300 @@
+.background_image {
+  min-height: 100vh;
+  background-image: url(../../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image_mobile {
+  margin-top: 16px;
+  width: 100%;
+  min-height: 170px;
+}
+
+.image_desktop {
+  display: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.page_number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 152px;
+  margin-bottom: 13px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 100%;
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.number:hover {
+  border: 1px solid #ffffff;
+}
+
+.numberSelected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #0b0d17;
+  background-color: #ffffff;
+  border-radius: 100%;
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 327px;
+  margin-top: 13px;
+}
+
+.article_title {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  color: #d0d6f9;
+  margin-bottom: 4.5px;
+}
+
+.article_subtitle {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 4.5px;
+  margin-bottom: 8px;
+}
+
+.article_text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .background_image {
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
+  }
+
+  .image_mobile {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 310px;
+  }
+
+  .main {
+    margin-top: 56px;
+  }
+
+  .page_number {
+    width: 210px;
+    margin-bottom: 22px;
+  }
+
+  .number {
+    width: 60px;
+    height: 60px;
+    mix-blend-mode: normal;
+    border: 1.8px solid rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  .number:hover {
+    border: 1.8px solid #ffffff;
+  }
+
+  .numberSelected {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #0b0d17;
+    mix-blend-mode: normal;
+    border: 1.8px solid rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  .article {
+    width: 458px;
+    margin-top: 22px;
+  }
+
+  .article_title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 8px;
+  }
+
+  .article_subtitle {
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .article_text {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1275px) {
+  .background_image {
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .content {
+    max-width: 515px;
+  }
+
+  .image_mobile {
+    display: none;
+  }
+
+  .image_desktop {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 165px;
+    padding-right: 130px;
+    margin-top: 34px;
+  }
+
+  .page_number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    height: 304px;
+    margin-bottom: 13px;
+    margin-right: 40px;
+  }
+
+  .number {
+    width: 80px;
+    height: 80px;
+    border: 2.2px solid rgba(255, 255, 255, 0.25);
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+
+  .number:hover {
+    border: 2.2px solid #ffffff;
+  }
+
+  .numberSelected {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    color: #0b0d17;
+    border: 2.2px solid rgba(255, 255, 255, 0.25);
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+
+  .article {
+    align-items: start;
+    min-width: 470px;
+    margin-top: 13px;
+    margin-left: 40px;
+  }
+
+  .article_title {
+    text-align: start;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: none;
+    letter-spacing: 2.7px;
+    margin-bottom: 5.5px;
+  }
+
+  .article_subtitle {
+    text-align: start;
+    white-space: nowrap;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: none;
+    margin-top: 5.5px;
+    margin-bottom: 8.5px;
+  }
+
+  .article_text {
+    text-align: start;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: none;
+    padding: 8.5px;
+    min-height: 209px;
+  }
+}

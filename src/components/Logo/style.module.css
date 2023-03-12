@@ -1,0 +1,35 @@
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 2.82vh;
+  margin-left: 24px;
+  cursor: pointer;
+  animation: slideLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 48px;
+    height: 48px;
+    margin-left: 39px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    margin-top: 7.11vh;
+    margin-left: 55px;
+  }
+}

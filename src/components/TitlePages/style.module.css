@@ -1,0 +1,49 @@
+.page_title {
+  padding-top: 10.35vh;
+  text-align: center;
+  color: #ffffff;
+  font-family: Barlow Condensed;
+  font-size: 1.88vh;
+  font-weight: 400;
+  line-height: 2.25vh;
+  letter-spacing: 0.72vw;
+  margin-bottom: 1.88vh;
+  text-transform: uppercase;
+}
+
+.page_titleNumber {
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 3.2vw;
+}
+
+@media (min-width: 768px) {
+  .page_title {
+    padding-top: 13.28vh;
+    text-align: left;
+    font-size: 1.56vh;
+    line-height: 2.34vh;
+    letter-spacing: 0.43vw;
+    margin-bottom: 2.92vh;
+    margin-left: 5.01vw;
+  }
+
+  .page_titleNumber {
+    margin-right: 2.47vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page_title {
+    padding-top: 23.55vh;
+    font-size: 3.11vh;
+    line-height: 3.77vh;
+    letter-spacing: 0.32vw;
+    margin-bottom: 3.33vh;
+    margin-left: 11.56vw;
+  }
+
+  .page_titleNumber {
+    margin-right: 1.94vw;
+  }
+}

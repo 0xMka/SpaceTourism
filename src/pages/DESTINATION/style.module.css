@@ -1,0 +1,278 @@
+.background_image {
+  min-height: 100vh;
+  background-image: url(../../assets/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.76vh;
+}
+
+.image {
+  width: 170px;
+  height: 170px;
+  animation: rotate 100s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.image_item {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.05vh;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pagination_item {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.64vh;
+  line-height: 2vh;
+  letter-spacing: 0.62vw;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 3.46vw;
+  margin-right: 3.46vw;
+  padding-bottom: 1.29vh;
+}
+
+.pagination_item:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.article {
+  padding: 2.35vh 0 3.76vh 0;
+  margin: 0 6.4vw 0 6.4vw;
+  border-bottom: 0.25vh solid rgba(255, 255, 255, 0.15);
+}
+
+.article_title {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.58vh;
+  line-height: 7.52vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+.article_text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.76vh;
+  line-height: 2.94vh;
+  text-align: center;
+  color: #d0d6f9;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.76vh 0 3.05vh 0;
+}
+
+.detail_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail_item {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.64vh;
+  line-height: 2vh;
+  text-align: center;
+  letter-spacing: 0.62vw;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  padding-bottom: 0.7vh;
+}
+
+.detail_itemData {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.29vh;
+  line-height: 3.76vh;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 0.7vh;
+  padding-bottom: 3.76vh;
+}
+
+@media (min-width: 768px) {
+  .background_image {
+    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .wrapper {
+    margin-top: 5.85vh;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content {
+    padding-top: 5.17vh;
+  }
+
+  .pagination {
+    padding-bottom: 1.46vh;
+  }
+
+  .pagination_item {
+    font-size: 1.56vh;
+    line-height: 1.85vh;
+    letter-spacing: 0.35vw;
+    margin-left: 2.34vw;
+    margin-right: 2.34vw;
+  }
+
+  .article {
+    padding: 3.12vh 0 4.78vh 0;
+    margin: 0 6.31vw 0 6.31vw;
+  }
+
+  .article_title {
+    font-size: 7.81vh;
+    line-height: 8.98vh;
+  }
+
+  .article_text {
+    font-size: 1.56vh;
+    line-height: 2.73vh;
+  }
+
+  .detail {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2.73vh 6.31vw 6.05vh 6.31vw;
+  }
+
+  .detail_item {
+    letter-spacing: 0.3vw;
+  }
+
+  .detail_itemData {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .background_image {
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  }
+
+  .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 7.11vh;
+    margin-left: 15.97vw;
+    margin-right: 11.31vw;
+  }
+
+  .image {
+    width: 445px;
+    height: 445px;
+  }
+
+  .content {
+    align-items: flex-start;
+    padding-top: 0;
+    margin-left: 10.9vw;
+    width: 30.9vw;
+  }
+
+  .pagination {
+    padding-bottom: 1.66vh;
+  }
+
+  .pagination_item {
+    font-size: 1.77vh;
+    line-height: 2.11vh;
+    letter-spacing: 0.18vw;
+    margin-left: 0;
+    margin-right: 2.5vw;
+  }
+
+  .article {
+    padding: 4.11vh 0 6vh 0;
+    margin: 0 0 0 0;
+  }
+
+  .article_title {
+    font-size: 11.11vh;
+    line-height: 12.77vh;
+    text-align: start;
+  }
+
+  .article_text {
+    font-size: 2vh;
+    line-height: 3.55vh;
+    text-align: start;
+  }
+
+  .detail {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3.11vh 0 13.11vh 0;
+  }
+
+  .detail_column {
+    margin-right: 5.48vw;
+  }
+
+  .detail_item {
+    font-size: 1.55vh;
+    line-height: 1.88vh;
+    letter-spacing: 0.16vw;
+  }
+
+  .detail_itemData {
+    font-size: 3.11vh;
+    line-height: 3.55vh;
+    padding-bottom: 0;
+  }
+}
