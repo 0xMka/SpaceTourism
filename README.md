@@ -1,3 +1,3 @@
 # SpaceTourism
 
-VISIT DEMO www.space-tourism-0xmka.vercel.app
+VISIT DEMO https://space-tourism-nleiqrbhu-0xmka.vercel.app/
