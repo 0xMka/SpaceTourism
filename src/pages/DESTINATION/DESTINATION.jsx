@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { TitlePages } from "../../components/TitlePages/TitlePages";
 import {
   DestinationDataContext,
@@ -9,13 +9,45 @@ import s from "./style.module.css";
 export const DESTINATION = () => {
   const initialData = useContext(DestinationDataContext);
   const [data, setData] = useState(initialData);
+  const [swipeCount, setSwipeCount] = useState(1);
+  const ref = useRef(null);
+  let touchStartX = 0;
+
+  function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
+  }
+
+  function handleTouchEnd(e) {
+    const touch = e.changedTouches[0];
+    const distance = touch.clientX - touchStartX;
+    const dataMap = {
+      1: "moon",
+      2: "mars",
+      3: "europa",
+      4: "titan",
+    };
+    const swipeDirection = distance > 0 ? -1 : 1;
+    let newSwipe = swipeCount + swipeDirection;
+    if (newSwipe < 1) {
+      newSwipe = 4;
+    } else if (newSwipe > 4) {
+      newSwipe = 1;
+    }
+    setSwipeCount(newSwipe);
+    setData(dataMap[newSwipe]);
+  }
 
   return (
     <DestinationDataContext.Provider value={(data, setData)}>
       <div className={`${s.background_image}`}>
         <TitlePages pageNumber={DATA.page.number} title={DATA.page.title} />
 
-        <div className={s.wrapper}>
+        <div
+          ref={ref}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          className={s.wrapper}
+        >
           <div className={s.image}>
             <img className={s.image_item} src={DATA[data].img} alt="" />
           </div>
