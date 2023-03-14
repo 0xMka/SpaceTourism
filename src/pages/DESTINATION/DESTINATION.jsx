@@ -55,38 +55,41 @@ export const DESTINATION = () => {
             <div className={s.pagination}>
               <div
                 onClick={() => setData("moon")}
-                className={s.pagination_item}
-                style={{
-                  borderBottom: data === "moon" ? "2px solid #ffffff" : "none",
-                }}
+                className={
+                  data === "moon"
+                    ? ` ${s.pagination_itemSelected} ${s.pagination_item}`
+                    : s.pagination_item
+                }
               >
                 {DATA.moon.name}
               </div>
               <div
                 onClick={() => setData("mars")}
-                className={s.pagination_item}
-                style={{
-                  borderBottom: data === "mars" ? "2px solid #ffffff" : "none",
-                }}
+                className={
+                  data === "mars"
+                    ? `${s.pagination_item} ${s.pagination_itemSelected}`
+                    : s.pagination_item
+                }
               >
                 {DATA.mars.name}
               </div>
               <div
                 onClick={() => setData("europa")}
-                className={s.pagination_item}
-                style={{
-                  borderBottom:
-                    data === "europa" ? "2px solid #ffffff" : "none",
-                }}
+                className={
+                  data === "europa"
+                    ? `${s.pagination_item} ${s.pagination_itemSelected}`
+                    : s.pagination_item
+                }
               >
                 {DATA.europa.name}
               </div>
               <div
                 onClick={() => setData("titan")}
-                className={s.pagination_item}
-                style={{
-                  borderBottom: data === "titan" ? "2px solid #ffffff" : "none",
-                }}
+                className={
+                  data === "titan"
+                    ? `${s.pagination_item} ${s.pagination_itemSelected}`
+                    : s.pagination_item
+                }
               >
                 {DATA.titan.name}
               </div>
