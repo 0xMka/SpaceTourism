@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import s from "./style.module.css";
 
 export const NavBar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [burger_class, setBurgerClass] = useState(`${s.burger} ${s.visible}`);
   const [menu_class, setMenuClass] = useState(`${s.menu} ${s.hidden}`);
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -29,8 +30,6 @@ export const NavBar = () => {
         </svg>
       </div>
 
-      <div className={s.line_style}></div>
-
       <div className={menu_class}>
         <svg
           onClick={updateMenu}
@@ -46,19 +45,45 @@ export const NavBar = () => {
         </svg>
 
         <nav className={s.liste_title}>
-          <div onClick={() => navigate("/")} className={s.main}>
+          <div
+            onClick={() => navigate("/")}
+            className={
+              location.pathname === "/" ? `${s.main} ${s.mainSelected}` : s.main
+            }
+          >
             <b className={s.number_main}>00</b> HOME
           </div>
 
-          <div onClick={() => navigate("/destination")} className={s.main}>
+          <div
+            onClick={() => navigate("/destination")}
+            className={
+              location.pathname === "/destination"
+                ? `${s.main} ${s.mainSelected}`
+                : s.main
+            }
+          >
             <b className={s.number_main}>01</b> DESTINATION
           </div>
 
-          <div onClick={() => navigate("/crew")} className={s.main}>
+          <div
+            onClick={() => navigate("/crew")}
+            className={
+              location.pathname === "/crew"
+                ? `${s.main} ${s.mainSelected}`
+                : s.main
+            }
+          >
             <b className={s.number_main}>02</b> CREW
           </div>
 
-          <div onClick={() => navigate("/technology")} className={s.main}>
+          <div
+            onClick={() => navigate("/technology")}
+            className={
+              location.pathname === "/technology"
+                ? `${s.main} ${s.mainSelected}`
+                : s.main
+            }
+          >
             <b className={s.number_main}>03</b> TECHNOLOGY
           </div>
         </nav>
