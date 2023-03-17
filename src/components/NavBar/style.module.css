@@ -79,22 +79,11 @@
     letter-spacing: 0.3vw;
   }
 
-  .liste_title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
   .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-left: 0;
     padding-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-    height: 100%;
     margin-right: 2.4vw;
     margin-left: 2.4vw;
   }
@@ -102,10 +91,12 @@
   .main:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
-}
 
-.mainSelected {
-  border-bottom: 3px solid rgba(255, 255, 255, 1) !important;
+  .liste_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1440px) {
