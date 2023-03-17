@@ -48,7 +48,7 @@ export const NavBar = () => {
           <div
             onClick={() => navigate("/")}
             className={
-              location.pathname === "/" ? s.main || s.mainSelected : s.main
+              location.pathname === "/" ? `${s.main} ${s.mainSelected}` : s.main
             }
           >
             <b className={s.number_main}>00</b> HOME
@@ -58,7 +58,7 @@ export const NavBar = () => {
             onClick={() => navigate("/destination")}
             className={
               location.pathname === "/destination"
-                ? s.main || s.mainSelected
+                ? `${s.main} ${s.mainSelected}`
                 : s.main
             }
           >
@@ -68,7 +68,9 @@ export const NavBar = () => {
           <div
             onClick={() => navigate("/crew")}
             className={
-              location.pathname === "/crew" ? s.main || s.mainSelected : s.main
+              location.pathname === "/crew"
+                ? `${s.main} ${s.mainSelected}`
+                : s.main
             }
           >
             <b className={s.number_main}>02</b> CREW
@@ -78,7 +80,7 @@ export const NavBar = () => {
             onClick={() => navigate("/technology")}
             className={
               location.pathname === "/technology"
-                ? s.main || s.mainSelected
+                ? `${s.main} ${s.mainSelected}`
                 : s.main
             }
           >
