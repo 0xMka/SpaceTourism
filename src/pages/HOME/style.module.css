@@ -194,6 +194,7 @@
   }
 
   .text {
+    text-align: start;
     font-size: 2vh;
     line-height: 3.55vh;
   }
