@@ -97,15 +97,16 @@
     height: 100%;
     margin-right: 2.4vw;
     margin-left: 2.4vw;
+    border-bottom: 3px solid transparent;
   }
 
   .main:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
-}
 
-.mainSelected {
-  border-bottom: 3px solid rgba(255, 255, 255, 1) !important;
+  .mainSelected {
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+  }
 }
 
 @media (min-width: 1440px) {
